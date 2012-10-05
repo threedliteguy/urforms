@@ -368,6 +368,7 @@ public class ManageFormsActivity extends BaseActivity {
 		  
 		  	Attribute attribute = new Attribute();
 		  	attribute.setAttributeName(name);
+		  	attribute.setAttributeDesc(name);
 		  	attribute.setDisplayOrder(maxOrder+1);
 		  	attribute.setEntityName(entities.get(currentEntity).getName());
 		  	try {
