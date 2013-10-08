@@ -234,8 +234,6 @@ public class BackupRestoreActivity extends BaseActivity {
 		File metadata = new File(blobdir, getBlobMetadataFileName());
 		BufferedReader in = new BufferedReader(new FileReader(metadata));
 		try {
-			String header = in.readLine();
-
 			SQLiteDatabase database = sqlHelper.getWritableDatabase();
 			BlobDataDao blobDataDao = new BlobDataDao(database);
 			try {
@@ -602,7 +600,6 @@ public class BackupRestoreActivity extends BaseActivity {
 				List<Attribute> newAttributes = new ArrayList<Attribute>();
 				BufferedReader in = new BufferedReader(new FileReader(file));
 				try {
-					String header = in.readLine();
 					int rowCount = 0;
 					Attribute attribute;
 					while ((attribute = getFormImportRow(in, rowCount, entity)) != null) {
