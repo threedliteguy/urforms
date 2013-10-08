@@ -94,7 +94,7 @@ public class ManageFormsActivity extends BaseActivity {
 		ListView entitylist = new ListView(this);
 		
 		entityAdapter =  new ArrayAdapter<Entity>(this,
-				android.R.layout.simple_list_item_activated_1,
+				android.R.layout.simple_list_item_1,
 				android.R.id.text1,
 				entities);
 		entitylist.setAdapter(entityAdapter);
@@ -134,7 +134,7 @@ public class ManageFormsActivity extends BaseActivity {
 
 		ListView attributelist = new ListView(this);
 		attributeAdapter = new ArrayAdapter<Attribute>(this,
-				android.R.layout.simple_list_item_activated_1,
+				android.R.layout.simple_list_item_1,
 				android.R.id.text1,
 				attributes);
 		attributelist.setAdapter(attributeAdapter);
