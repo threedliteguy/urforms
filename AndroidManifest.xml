@@ -47,6 +47,10 @@
                 <data android:mimeType="*/*" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SearchViewActivity"
+            android:label="@string/title_activity_search_view" >
+        </activity>
         </application>
         
 
