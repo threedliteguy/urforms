@@ -51,6 +51,14 @@
             android:name=".SearchViewActivity"
             android:label="@string/title_activity_search_view" >
         </activity>
+        <activity
+            android:name=".AttributesListActivity"
+            android:label="@string/title_activity_attributes_list" >
+        </activity>
+        <activity
+            android:name=".AttributeDetailsActivity"
+            android:label="@string/title_activity_attribute_details" >
+        </activity>
         </application>
         
 

@@ -11,5 +11,7 @@
     <!-- aFileChooser -->
     <string name="select_file">Choose file</string>
     <string name="title_activity_search_view">URForms - Search / Enter Data</string>
+    <string name="title_activity_attributes_list">URForms - Attributes list</string>
+    <string name="title_activity_attribute_details">URForms - Attribute Details</string>
 
 </resources>
