@@ -148,6 +148,7 @@ public class AttributeDetailsActivity extends BaseActivity {
 		try {
 			currentAttribute = new AttributeDao(sqlHelper.getWritableDatabase()).save(currentAttribute);
 			makeToast("Saved.");
+			finish();
 		} finally {
 			sqlHelper.close();
 		}
