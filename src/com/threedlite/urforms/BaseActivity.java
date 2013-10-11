@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.HorizontalScrollView;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
@@ -38,20 +37,14 @@ public class BaseActivity extends Activity {
 	public static final String SEARCH_DATA = "Search / Enter Data";
 	public static final String BACKUP_RESTORE = "Backup / Restore";
 
-	protected int COL_MIN_WIDTH = 300;
-
 	protected UrSqlHelper sqlHelper;
 
-	// Add horiz and vert scrolls
 	@Override
 	public void setContentView(View view) {
 		ScrollView sv = new ScrollView(this);
 		sv.setFillViewport(true);
 		sv.addView(view);
-		HorizontalScrollView hsv = new HorizontalScrollView(this);
-		hsv.setFillViewport(true);
-		hsv.addView(sv);
-		super.setContentView(hsv);
+		super.setContentView(sv);
 	}
 
 	@Override

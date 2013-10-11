@@ -1,6 +1,6 @@
 package com.threedlite.urforms.data;
 
-import java.text.SimpleDateFormat;
+import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -222,7 +222,7 @@ public class DataDao {
 	}
 	
 	public static String formatDate(java.util.Date date) {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		DateFormat sdf = DateFormat.getDateTimeInstance();
 		return sdf.format(date);
 	}
 	
@@ -265,7 +265,7 @@ public class DataDao {
 
 		//Log.d(TAG, sql);
 		String debug = ""; for (String s:args) debug += s + " ";
-		//Log.d(TAG, debug);
+		Log.d(TAG, debug);
 
 		List<Map<String, String>> results = new ArrayList<Map<String, String>>();
 		Cursor cursor = database.rawQuery(sql, (String[])args.toArray(new String[args.size()]));
