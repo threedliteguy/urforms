@@ -52,7 +52,6 @@ public class BackupRestoreActivity extends BaseActivity {
 
 		LinearLayout rootView = new LinearLayout(this);
 		rootView.setOrientation(LinearLayout.VERTICAL);
-		rootView.setMinimumWidth(COL_MIN_WIDTH);
 
 		Button btnExport = new Button(this);
 		btnExport.setText("Backup to .csv files");
